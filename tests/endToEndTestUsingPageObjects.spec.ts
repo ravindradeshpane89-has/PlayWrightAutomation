@@ -12,7 +12,7 @@ const loginPage = poManager.getLoginPage();
 await loginPage.goToLoginPage(url);
 await loginPage.login(dataset.inputEmail,dataset.password);
 
-// validate if product is added to cart.
+// validate if product is added to cart page.
 const dashboardPage= poManager.getDashboardPage();
 await dashboardPage.searchProductAndAddToCart(dataset.requiredProduct);
 
